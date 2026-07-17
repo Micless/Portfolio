@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Michael Tadesse - Full Stack Developer. Building high-performance web applications with modern technologies.">
+    <meta name="theme-color" content="#05050a">
     <title>Michael Tadesse | Portfolio Presentation</title>
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -11,21 +13,21 @@
 
     <div class="bg-overlay"></div>
 
-    <main class="presentation-container">
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+    <main class="presentation-container" id="presentationContainer">
 
         <section id="page-1" class="slide-page">
             <div class="slide-content grid-two-cols">
-<div class="image-placeholder main-photo portrait-photo">
-    <img src="me.jpg" alt="Michael Tadesse" style="width: 100%; height: 700px; object-fit: cover; object-position: center 90%; border-radius: 12px;">
-</div>
-                <div class="text-block">
+                <div class="image-placeholder main-photo portrait-photo reveal-on-scroll">
+                    <img src="me.jpg" alt="Michael Tadesse" class="hero-photo-img" style="width: 80%; height: 110%; object-fit: cover; border-radius: 12px;">
+                </div>
+                <div class="text-block reveal-on-scroll">
                     <span class="badge">BUILDING THE DIGITAL WORLD THROUGH CODE</span>
                     <h1 class="dev-name">MICHAEL TADESSE</h1>
                     <h2 class="dev-title">FULL STACK DEVELOPER</h2>
-                    <p class="dev-desc">Crafting highperformance web applications with modern technologies.</p>
-                    
-                    
-
+                    <p class="dev-desc">Crafting high performance web applications with modern technologies.</p>
                     <a href="#page-5" class="btn-action">View My Work</a>
                 </div>
             </div>
@@ -33,21 +35,20 @@
         </section>
 
         <section id="page-2" class="slide-page">
-<div class="slide-content" style="display: flex; justify-content: center; gap: 30px; max-width: 1000px; margin: 0 auto;">
-                
-                <div class="text-block bg-dark-card">
+            <div class="slide-content grid-two-cols">
+                <div class="text-block bg-dark-card reveal-on-scroll">
                     <h3>About Me</h3>
                     <p>Hello! My name is <strong>Michael Tadesse</strong>. I am a Full Stack Developer specializing in building scalable and performant web applications. I love solving complex problems and creating seamless user experiences.</p>
-                    <div class="image-placeholder mini-photo" style="padding: 0; overflow: hidden; height: 290px;">
-    <img src="mike.jpg" alt="Michael" style="width: 72%; height: 110%; object-fit: cover; object-position: center 10%;">
-</div>
+                    <div class="image-placeholder mini-photo" style="padding: 0; overflow: hidden; height: 340px; margin-top: 15px;">
+                        <img src="mike.jpg" alt="Michael" style="width: 60%; height: 100%; object-fit: cover; object-position: center 15%;">
+                    </div>
                 </div>
-                <div class="text-block bg-dark-card">
+                <div class="text-block bg-dark-card reveal-on-scroll">
                     <h3>My Philosophy</h3>
                     <p>Clean code, modular architecture, and user first design are the core pillars of my development process. Every project is an opportunity to learn and implement bleeding edge technology solutions.</p>
-                    <div class="image-placeholder" style="padding: 0; overflow: hidden; height: 180px; margin-top: 15px; border-radius: 8px;">
-    <img src="new.jpg" alt="Philosophy" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-</div>
+                    <div class="image-placeholder" style="padding: 0; overflow: hidden; height: 260px; margin-top: 15px; border-radius: 8px;">
+                        <img src="new.jpg" alt="Philosophy" class="philosophy-img" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
                 </div>
             </div>
             <div class="page-number">2 / 7</div>
@@ -55,9 +56,9 @@
 
         <section id="page-3" class="slide-page">
             <div class="slide-content">
-                <h2 class="section-heading">Technical Expertise</h2>
+                <h2 class="section-heading reveal-on-scroll">Technical Expertise</h2>
                 <div class="grid-two-cols" style="margin-top: 40px;">
-                    <div class="bg-dark-card tech-box">
+                    <div class="bg-dark-card tech-box reveal-on-scroll">
                         <h3><i class="fa-solid fa-code"></i> Front-End Architecture</h3>
                         <p>Creating highly responsive, modular, and dynamic user interfaces with excellent typography and layouts.</p>
                         <div class="tech-stack-tags">
@@ -66,9 +67,9 @@
                             <span>Vite</span>
                         </div>
                     </div>
-                    <div class="bg-dark-card tech-box">
+                    <div class="bg-dark-card tech-box reveal-on-scroll">
                         <h3><i class="fa-solid fa-server"></i> Back-End & Logic</h3>
-                        <p>Developing secure APIs, structured database routing, and efficient server-side processing mechanisms.</p>
+                        <p>Developing secure APIs, structured database routing, and efficient server side processing mechanisms.</p>
                         <div class="tech-stack-tags">
                             <span><i class="fa-brands fa-node-js"></i> Node.js</span>
                             <span><i class="fa-brands fa-python"></i> Python</span>
@@ -81,31 +82,31 @@
 
         <section id="page-4" class="slide-page">
             <div class="slide-content">
-                <h2 class="section-heading">My Hobbies & Interests</h2>
+                <h2 class="section-heading reveal-on-scroll">My Hobbies & Interests</h2>
                 <div class="grid-three-cols" style="margin-top: 40px;">
-                    <div class="bg-dark-card hobby-card">
+                    <div class="bg-dark-card hobby-card reveal-on-scroll">
                         <i class="fa-solid fa-book-open hobby-icon"></i>
                         <h4>Reading Books</h4>
                         <p>Expanding knowledge through technology blogs, documentation, and non fiction literature.</p>
-                        <div class="image-placeholder<div class="image-placeholder" style="padding: 0; overflow: hidden; height: 340px; margin-top: 15px; border-radius: 8px;">
-    <img src="book.jpg" alt="Reading" style="width: 80%; height: 100%; object-fit: cover; object-position: center;">
-</div>
+                        <div class="image-placeholder" style="padding: 0; overflow: hidden; height: 340px; margin-top: 15px; border-radius: 8px;">
+                            <img src="book.jpg" alt="Reading" style="width: 100%; height: 100%; object-fit: cover; object-position: center 25%;">
+                        </div>
                     </div>
-                    <div class="bg-dark-card hobby-card">
+                    <div class="bg-dark-card hobby-card reveal-on-scroll">
                         <i class="fa-solid fa-laptop-code hobby-icon"></i>
                         <h4>Building Projects</h4>
                         <p>Experimenting with creative pet projects and keeping up with development trends.</p>
                         <div class="image-placeholder" style="padding: 0; overflow: hidden; height: 140px; margin-top: 35px; border-radius: 8px;">
-    <img src="hobbies-project.png" alt="Projects" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-</div>
+                            <img src="hobbies-project.png" alt="Projects" style="width: 100%; height: 100%; object-fit: contain; object-position: center;">
+                        </div>
                     </div>
-                    <div class="bg-dark-card hobby-card">
+                    <div class="bg-dark-card hobby-card reveal-on-scroll">
                         <i class="fa-solid fa-headphones hobby-icon"></i>
                         <h4>Music & Focus</h4>
                         <p>Listening to deep focus background sound tracks while writing high quality structural code.</p>
-                        <div class="image-placeholder" style="padding: 0; overflow: hidden; height: 140px; margin-top: 15px; border-radius: 8px;">
-    <img src="music.jpg" alt="Music" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-</div>
+                        <div class="image-placeholder" style="padding: 0; overflow: hidden; height: 200px; margin-top: 15px; border-radius: 8px;">
+                            <img src="music.jpg" alt="Music" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -114,10 +115,10 @@
 
         <section id="page-5" class="slide-page">
             <div class="slide-content grid-two-cols">
-                <div class="text-block">
+                <div class="text-block reveal-on-scroll">
                     <span class="badge">FEATURED WORK</span>
                     <h3>Project 1: Tibeb Marketplace</h3>
-                    <p style="color: #aaaaaa; margin: 15px 0;">A full-stack modern e-commerce platform built for digital and retail products, featuring a slick React front-end and a secure back-end ecosystem.</p>
+                    <p style="color: #aaaaaa; margin: 15px 0;">A full stack modern e-commerce platform built for digital and retail products, featuring a slick React front-end and a secure back-end ecosystem.</p>
                     <ul class="project-bullets">
                         <li><i class="fa-solid fa-check"></i> Vite + React + TypeScript Implementation</li>
                         <li><i class="fa-solid fa-check"></i> Advanced "Add to Cart" state management</li>
@@ -125,13 +126,13 @@
                     </ul>
                     <a href="https://tibeb-developers.vercel.app/" target="_blank" class="project-demo-link">Live Project Link <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
-                <div class="project-images-grid">
+                <div class="project-images-grid reveal-on-scroll">
                     <div class="image-placeholder" style="padding: 0; overflow: hidden; height: 100%; min-height: 200px; border-radius: 8px;">
-    <img src="Tibeb1.png" alt="Tibeb Marketplace Mockup" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-</div>
+                        <img src="Tibeb1.png" alt="Tibeb Marketplace Mockup" style="width: 100%; height: 100%; object-fit: contain; object-position: center;">
+                    </div>
                     <div class="image-placeholder" style="padding: 0; overflow: hidden; height: 100%; min-height: 200px; border-radius: 8px;">
-    <img src="Tibeb2.png" alt="Tibeb Product Page" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-</div>
+                        <img src="Tibeb2.png" alt="Tibeb Product Page" style="width: 100%; height: 100%; object-fit: contain; object-position: center;">
+                    </div>
                 </div>
             </div>
             <div class="page-number">5 / 7</div>
@@ -139,19 +140,19 @@
 
         <section id="page-6" class="slide-page">
             <div class="slide-content">
-                <h2 class="section-heading">Web Development Workflow</h2>
-                <div class="workflow-timeline" style="margin-top: 50px;">
-                    <div class="workflow-step">
+                <h2 class="section-heading reveal-on-scroll">Web Development Workflow</h2>
+                <div class="workflow-timeline" style="margin-top: 40px;">
+                    <div class="workflow-step reveal-on-scroll">
                         <div class="step-num">1</div>
                         <h4>Initial Concept</h4>
                         <p>Analyzing requirements, sketching application structures, and planning logic flows.</p>
                     </div>
-                    <div class="workflow-step">
+                    <div class="workflow-step reveal-on-scroll">
                         <div class="step-num">2</div>
                         <h4>Development</h4>
-                        <p>Writing precise TypeScript components, hooks, and clean server-side scripts.</p>
+                        <p>Writing precise TypeScript components, hooks, and clean server side scripts.</p>
                     </div>
-                    <div class="workflow-step">
+                    <div class="workflow-step reveal-on-scroll">
                         <div class="step-num">3</div>
                         <h4>Deployment</h4>
                         <p>Pushing to secure environments, continuous monitoring, and optimization.</p>
@@ -163,8 +164,8 @@
 
         <section id="page-7" class="slide-page">
             <div class="slide-content grid-two-cols">
-                <div class="text-block">
-                    <h2 style="font-size: 38px; margin-bottom: 20px;">Start Building For The Web</h2>
+                <div class="text-block reveal-on-scroll">
+                    <h2 style="font-size: clamp(1.5rem, 6vw, 2.375rem); margin-bottom: 20px; font-weight: 800;">Start Building For The Web</h2>
                     <p style="color: #888888; margin-bottom: 30px;">Let's collaborate on your next digital idea or enterprise platform. Reach out through any channel.</p>
                     
                     <div class="contact-list">
@@ -173,18 +174,13 @@
                         <div class="contact-row"><i class="fa-brands fa-telegram"></i> @I092MLBOA</div>
                     </div>
 
-                    <div class="social-links-container" style="margin-top: 40px;">
+                    <div class="social-links-container">
                         <a href="https://github.com/Micless" target="_blank" class="social-box"><i class="fa-brands fa-github"></i> GitHub</a>
-                        <a href="https://www.linkedin.com/in/michael-tad-ab0989306?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="text-block bg-dark-card" style="text-decoration: none; display: inline-flex; align-items: center; gap: 10px; padding: 10px 20px; border-radius: 6px;">
-    <i class="fa-brands fa-linkedin"></i> LinkedIn
-</a>
-</a>
+                        <a href="https://www.linkedin.com/in/michael-tad-ab0989306?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-box"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                     </div>
                 </div>
-                <div class="image-placeholder">
-                   <div class="image-placeholder" style="padding: 0; overflow: hidden; height: 100%; min-height: 250px; border-radius: 8px;">
-    <img src="last.jpg" alt="Contact Photo" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-</div>
+                <div class="image-placeholder contact-photo-frame reveal-on-scroll">
+                    <img src="last.jpg" alt="Contact Photo" style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%;">
                 </div>
             </div>
             <div class="page-number">7 / 7</div>
@@ -192,19 +188,92 @@
 
     </main>
 
+    <!-- Back to top button -->
+    <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <footer class="presentation-footer">
-        <div class="footer-left"><i class="fa-solid fa-phone"></i> +251938423234 | @I092MLBOA</div>
-        <div class="slide-navigation">
-            <a href="#page-1">Home</a>
-            <a href="#page-2">About</a>
-            <a href="#page-3">Tech</a>
-            <a href="#page-4">Hobbies</a>
-            <a href="#page-5">Marketplace</a>
-            <a href="#page-6">Process</a>
-            <a href="#page-7">Contact</a>
+        <div class="footer-content">
+            <div class="footer-left"><i class="fa-solid fa-phone"></i> +251938423234 | @I092MLBOA</div>
+            <div class="slide-navigation">
+                <a href="#page-1" data-page="page-1">Home</a>
+                <a href="#page-2" data-page="page-2">About</a>
+                <a href="#page-3" data-page="page-3">Tech</a>
+                <a href="#page-4" data-page="page-4">Hobbies</a>
+                <a href="#page-5" data-page="page-5">Marketplace</a>
+                <a href="#page-6" data-page="page-6">Process</a>
+                <a href="#page-7" data-page="page-7">Contact</a>
+            </div>
+            <div class="footer-right"><i class="fa-solid fa-envelope"></i> lijmichael1212@gmail.com</div>
         </div>
-        <div class="footer-right"><i class="fa-solid fa-envelope"></i> lijmichael1212@gmail.com</div>
     </footer>
+
+    <script>
+        // ---- Scroll reveal animation ----
+        const revealEls = document.querySelectorAll('.reveal-on-scroll');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        revealEls.forEach(el => revealObserver.observe(el));
+
+        // ---- Scroll progress bar ----
+        const scrollContainer = document.querySelector('.presentation-container');
+        const progressBar = document.getElementById('scrollProgressBar');
+
+        function updateProgressBar() {
+            const scrollable = scrollContainer.scrollHeight - scrollContainer.clientHeight;
+            const scrolled = scrollable > 0 ? (scrollContainer.scrollTop / scrollable) * 100 : 0;
+            progressBar.style.width = scrolled + '%';
+        }
+
+        // The container that actually scrolls differs between mobile (whole page) and
+        // desktop (the .presentation-container itself, via scroll-snap). Handle both.
+        window.addEventListener('scroll', updateProgressBar);
+        scrollContainer.addEventListener('scroll', updateProgressBar);
+        updateProgressBar();
+
+        // ---- Back to top button ----
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        function toggleBackToTop() {
+            const scrolledY = window.scrollY || scrollContainer.scrollTop;
+            if (scrolledY > 400) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        }
+        window.addEventListener('scroll', toggleBackToTop);
+        scrollContainer.addEventListener('scroll', toggleBackToTop);
+        toggleBackToTop();
+
+        backToTopBtn.addEventListener('click', () => {
+            document.getElementById('page-1').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // ---- Active nav link highlighting ----
+        const navLinks = document.querySelectorAll('.slide-navigation a');
+        const sections = document.querySelectorAll('.slide-page');
+
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('data-page') === id);
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        sections.forEach(section => navObserver.observe(section));
+    </script>
 
 </body>
 </html>
