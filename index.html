@@ -117,7 +117,61 @@
             <div class="slide-content grid-two-cols">
                 <div class="text-block reveal-on-scroll">
                     <span class="badge">FEATURED WORK</span>
-                    <h3>Project 1: Tibeb Marketplace</h3>
+                    <h3>Project 1: Merkato Store</h3>
+                    <p style="color: #aaaaaa; margin: 15px 0;">Built a fast and responsive web platform for local vendors to showcase their products online. Bringing tradition into the modern web!</p>
+                    <ul class="project-bullets">
+                        <li><i class="fa-solid fa-check"></i> React + Vite + TypeScript</li>
+                        <li><i class="fa-solid fa-check"></i> Dynamic product filtering by category & price range</li>
+                        <li><i class="fa-solid fa-check"></i> Secured payment system</li>
+                        <li><i class="fa-solid fa-check"></i> Cart System</li>
+                        <li><i class="fa-solid fa-check"></i> Category & Price Range Filtering</li>
+                        <li><i class="fa-solid fa-check"></i> Fully responsive UI</li>
+                    </ul>
+                    <a href="https://merkato-store-763n.vercel.app/" target="_blank" class="project-demo-link">Live Project Link <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="project-images-grid merkato-gallery reveal-on-scroll">
+                    <div class="image-placeholder merkato-thumb">
+                        <img src="Mer1.png" alt="Merkato Store Mockup">
+                    </div>
+                    <div class="image-placeholder merkato-thumb">
+                        <img src="Mer2.png" alt="Merkato Store Product Page">
+                        <button type="button" class="merkato-more-btn" id="merkatoMoreBtn" aria-haspopup="dialog" aria-label="View 3 more images"><span class="merkato-more-badge">+3</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="page-number">5 / 7</div>
+        </section>
+
+        <section id="page-6" class="slide-page">
+            <div class="slide-content grid-two-cols">
+                <div class="text-block reveal-on-scroll">
+                    <span class="badge">FEATURED WORK</span>
+                    <h3>Project 2: Zuria</h3>
+                    <p style="color: #aaaaaa; margin: 15px 0;">Find and hire the best Ethiopian freelance developers, video editors, and designers on Zuria. Fast, reliable, and tailored for local and global projects.</p>
+                    <ul class="project-bullets">
+                        <li><i class="fa-solid fa-check"></i> HTML5 + Advanced CSS3 Implementation</li>
+                        <li><i class="fa-solid fa-check"></i> Interactive Talent Directory & Search</li>
+                        <li><i class="fa-solid fa-check"></i> Dynamic JavaScript UI & Navigation</li>
+                    </ul>
+                    <a href="https://zuria-rho.vercel.app/" target="_blank" class="project-demo-link">Live Project Link <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="project-images-grid reveal-on-scroll">
+                    <div class="image-placeholder" style="padding: 0; overflow: hidden; height: 100%; min-height: 200px; border-radius: 8px;">
+                        <img src="Zur1.png" alt="Zuria Mockup" style="width: 100%; height: 100%; object-fit: contain; object-position: center;">
+                    </div>
+                    <div class="image-placeholder" style="padding: 0; overflow: hidden; height: 100%; min-height: 200px; border-radius: 8px;">
+                        <img src="Zur2.png" alt="Zuria Product Page" style="width: 100%; height: 100%; object-fit: contain; object-position: center;">
+                    </div>
+                </div>
+            </div>
+            <div class="page-number">5 / 7</div>
+        </section>
+
+        <section id="page-7" class="slide-page">
+            <div class="slide-content grid-two-cols">
+                <div class="text-block reveal-on-scroll">
+                    <span class="badge">FEATURED WORK</span>
+                    <h3>Project 3: Tibeb Marketplace</h3>
                     <p style="color: #aaaaaa; margin: 15px 0;">A full stack modern e-commerce platform built for digital and retail products, featuring a slick React front-end and a secure back-end ecosystem.</p>
                     <ul class="project-bullets">
                         <li><i class="fa-solid fa-check"></i> Vite + React + TypeScript Implementation</li>
@@ -138,7 +192,7 @@
             <div class="page-number">5 / 7</div>
         </section>
 
-        <section id="page-6" class="slide-page">
+        <section id="page-8" class="slide-page">
             <div class="slide-content">
                 <h2 class="section-heading reveal-on-scroll">Web Development Workflow</h2>
                 <div class="workflow-timeline" style="margin-top: 40px;">
@@ -162,7 +216,7 @@
             <div class="page-number">6 / 7</div>
         </section>
 
-        <section id="page-7" class="slide-page">
+        <section id="page-9" class="slide-page">
             <div class="slide-content grid-two-cols">
                 <div class="text-block reveal-on-scroll">
                     <h2 style="font-size: clamp(1.5rem, 6vw, 2.375rem); margin-bottom: 20px; font-weight: 800;">Start Building For The Web</h2>
@@ -188,6 +242,20 @@
 
     </main>
 
+    <!-- Merkato Store lightbox -->
+    <div class="merkato-modal" id="merkatoModal" role="dialog" aria-modal="true" aria-label="Merkato Store images" hidden>
+        <div class="merkato-modal-inner">
+            <button type="button" class="merkato-modal-close" id="merkatoModalClose" aria-label="Close gallery"><i class="fa-solid fa-xmark"></i></button>
+            <div class="merkato-modal-grid">
+                <img src="Mer1.png" alt="Merkato Store screenshot 1">
+                <img src="Mer2.png" alt="Merkato Store screenshot 2">
+                <img src="Mer3.png" alt="Merkato Store screenshot 3">
+                <img src="Mer4.png" alt="Merkato Store screenshot 4">
+                <img src="Mer5.png" alt="Merkato Store screenshot 5">
+            </div>
+        </div>
+    </div>
+
     <!-- Back to top button -->
     <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
         <i class="fa-solid fa-arrow-up"></i>
@@ -201,9 +269,11 @@
                 <a href="#page-2" data-page="page-2">About</a>
                 <a href="#page-3" data-page="page-3">Tech</a>
                 <a href="#page-4" data-page="page-4">Hobbies</a>
-                <a href="#page-5" data-page="page-5">Marketplace</a>
-                <a href="#page-6" data-page="page-6">Process</a>
-                <a href="#page-7" data-page="page-7">Contact</a>
+                <a href="#page-5" data-page="page-5">Merkato</a>
+                <a href="#page-6" data-page="page-6">Zuria</a>
+                <a href="#page-7" data-page="page-7">Marketplace</a>
+                <a href="#page-8" data-page="page-8">Process</a>
+                <a href="#page-9" data-page="page-9">Contact</a>
             </div>
             <div class="footer-right"><i class="fa-solid fa-envelope"></i> lijmichael1212@gmail.com</div>
         </div>
@@ -273,6 +343,39 @@
         }, { threshold: 0.5 });
 
         sections.forEach(section => navObserver.observe(section));
+    </script>
+
+    <script>
+        // ---- Merkato Store lightbox ----
+        (function () {
+            const modal = document.getElementById('merkatoModal');
+            const openBtn = document.getElementById('merkatoMoreBtn');
+            const closeBtn = document.getElementById('merkatoModalClose');
+            if (!modal || !openBtn || !closeBtn) return;
+
+            function openModal() {
+                modal.hidden = false;
+                requestAnimationFrame(() => modal.classList.add('open'));
+                document.body.style.overflow = 'hidden';
+                closeBtn.focus();
+            }
+
+            function closeModal() {
+                modal.classList.remove('open');
+                document.body.style.overflow = '';
+                setTimeout(() => { modal.hidden = true; }, 250);
+                openBtn.focus();
+            }
+
+            openBtn.addEventListener('click', openModal);
+            closeBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeModal();
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !modal.hidden) closeModal();
+            });
+        })();
     </script>
 
 </body>
